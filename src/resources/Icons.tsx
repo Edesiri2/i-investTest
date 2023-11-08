@@ -8,4 +8,13 @@ export const appIcons = {
     icon6: require("./Icons/insight.png"),
     icon7: require("./Icons/characteradd.png"),
   },
+  detailsScreen: {
+    icon1: require("./Icons/Graph.png"),
+    icon2: require("./Icons/PizzaHut.png"),
+    icon3: require("./Icons/Amazon.png"),
+    icon4: require("./Icons/Subway.png"),
+    icon5: require("./Icons/Burger.png"),
+    icon6: require("./Icons/Medical.png"),
+    icon7: require("./Icons/Ilustration.png"),
+  },
 };

@@ -12,23 +12,28 @@ import { appIcons } from "../resources/Icons";
 import UserIcon from "react-native-vector-icons/FontAwesome";
 import IdCard from "react-native-vector-icons/AntDesign";
 import Mail from "react-native-vector-icons/MaterialCommunityIcons";
+import { useNavigation, StackActions } from "@react-navigation/native";
 
 const activityButton = [
   {
     icon: appIcons.mainScreen.icon4,
     text: "Transfer",
+    navigation: "Transfer",
   },
   {
     icon: appIcons.mainScreen.icon5,
     text: "My Card",
+    navigation: "MyCard",
   },
   {
     icon: appIcons.mainScreen.icon6,
     text: "Insight",
+    navigation: "Details",
   },
 ];
 
 const Main: React.FunctionComponent<{}> = () => {
+  const navigation: any = useNavigation();
   return (
     <View style={mainScreenStyles.container}>
       <View style={mainScreenStyles.topView}>
@@ -139,7 +144,13 @@ const Main: React.FunctionComponent<{}> = () => {
               {activityButton.map((button, index) => {
                 return (
                   <View key={index}>
-                    <TouchableOpacity style={mainScreenStyles.activityBtn}>
+                    <TouchableOpacity
+                      style={mainScreenStyles.activityBtn}
+                      onPress={() => {
+                        navigation.dispatch(
+                          StackActions.replace(button.navigation, {})
+                        );
+                      }}>
                       <View style={mainScreenStyles.activityBtnImgView}>
                         <Image source={button.icon} />
                       </View>
