@@ -680,3 +680,18 @@ export const transferScreenStyles = StyleSheet.create({
     color: "#FFFFFF",
   },
 });
+
+export const receiptScreenStyles = StyleSheet.create({
+  container: {
+    display: "flex",
+    flex: 1,
+    backgroundColor: "#7165E3",
+    paddingTop: Platform.OS === "android" ? 60 : 70,
+  },
+  divider: {
+    borderBottomWidth: 1.5,
+    borderColor: "gainsboro",
+    paddingTop: 10,
+    borderStyle: "dashed",
+  },
+});

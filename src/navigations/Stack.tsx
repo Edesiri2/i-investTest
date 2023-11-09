@@ -4,6 +4,7 @@ import Main from "../screens/Main";
 import Details from "../screens/Details";
 import SavingScore from "../screens/SavingScore";
 import Transfer from "../screens/Transfer";
+import Reciept from "../screens/Reciept";
 
 const Stacks = createNativeStackNavigator();
 
@@ -40,6 +41,13 @@ const Stack: React.FunctionComponent<{}> = () => {
         component={Transfer}
         options={{
           animation: "slide_from_left",
+        }}
+      />
+      <Stacks.Screen
+        name="Receipt"
+        component={Reciept}
+        options={{
+          animation: "slide_from_bottom",
         }}
       />
     </Stacks.Navigator>

@@ -23,7 +23,7 @@ const activityButton = [
   {
     icon: appIcons.mainScreen.icon5,
     text: "My Card",
-    navigation: "MyCard",
+    navigation: "Receipt",
   },
   {
     icon: appIcons.mainScreen.icon6,
@@ -64,13 +64,15 @@ const Main: React.FunctionComponent<{}> = () => {
                   fontSize: 11,
                   color: "#1C1939",
                   paddingLeft: 25,
-                }}>
+                }}
+              >
                 Spent
               </Text>
               <View
                 style={{
                   flexDirection: "row",
-                }}>
+                }}
+              >
                 <View
                   style={{
                     width: 10,
@@ -78,14 +80,16 @@ const Main: React.FunctionComponent<{}> = () => {
                     borderRadius: 50,
                     backgroundColor: "#FF5141",
                     marginTop: 10,
-                  }}></View>
+                  }}
+                ></View>
                 <Text
                   style={{
                     fontWeight: "700",
                     fontSize: 24,
                     color: "#1C1939",
                     marginLeft: 15,
-                  }}>
+                  }}
+                >
                   $1,460
                 </Text>
               </View>
@@ -98,7 +102,8 @@ const Main: React.FunctionComponent<{}> = () => {
                   fontSize: 11,
                   color: "#1C1939",
                   paddingLeft: 25,
-                }}>
+                }}
+              >
                 Earned
               </Text>
               <View style={{ flexDirection: "row" }}>
@@ -109,14 +114,16 @@ const Main: React.FunctionComponent<{}> = () => {
                     borderRadius: 50,
                     backgroundColor: "#967AF3",
                     marginTop: 10,
-                  }}></View>
+                  }}
+                ></View>
                 <Text
                   style={{
                     fontWeight: "700",
                     fontSize: 24,
                     color: "#1C1939",
                     marginLeft: 15,
-                  }}>
+                  }}
+                >
                   $2,730
                 </Text>
               </View>
@@ -150,7 +157,8 @@ const Main: React.FunctionComponent<{}> = () => {
                         navigation.dispatch(
                           StackActions.replace(button.navigation, {})
                         );
-                      }}>
+                      }}
+                    >
                       <View style={mainScreenStyles.activityBtnImgView}>
                         <Image source={button.icon} />
                       </View>
@@ -173,7 +181,8 @@ const Main: React.FunctionComponent<{}> = () => {
                     display: "flex",
                     flexDirection: "column",
                     gap: 20,
-                  }}>
+                  }}
+                >
                   <View style={mainScreenStyles.percentView}>
                     <Text style={mainScreenStyles.sevntyFivePercent}>75%</Text>
                     <Text style={mainScreenStyles.completedText}>
@@ -191,24 +200,26 @@ const Main: React.FunctionComponent<{}> = () => {
                       display: "flex",
                       flexDirection: "row",
                       justifyContent: "space-around",
-                    }}>
+                    }}
+                  >
                     {/* icons */}
                     <View
                       style={{
                         display: "flex",
                         flexDirection: "column",
-                      }}>
-                      <UserIcon name='user' size={25} color={"#7165E3"} />
+                      }}
+                    >
+                      <UserIcon name="user" size={25} color={"#7165E3"} />
 
                       <IdCard
-                        name='idcard'
+                        name="idcard"
                         size={25}
                         color={"#7165E3"}
                         style={{ paddingTop: 130 }}
                       />
 
                       <Mail
-                        name='email'
+                        name="email"
                         size={25}
                         color={"#7165E3"}
                         style={{ paddingTop: 50 }}
@@ -222,7 +233,8 @@ const Main: React.FunctionComponent<{}> = () => {
                           Personal Information
                         </Text>
                         <Text
-                          style={mainScreenStyles.personalInformationSubText}>
+                          style={mainScreenStyles.personalInformationSubText}
+                        >
                           Please provide documents to verify{"\n"} your source
                           of income personal{"\n"}informmation.
                         </Text>
@@ -230,7 +242,8 @@ const Main: React.FunctionComponent<{}> = () => {
                           <Text
                             style={
                               mainScreenStyles.personalInformationBottomText
-                            }>
+                            }
+                          >
                             Continue
                           </Text>
                         </TouchableOpacity>
@@ -241,7 +254,8 @@ const Main: React.FunctionComponent<{}> = () => {
                         style={[
                           mainScreenStyles.personalInformation,
                           { paddingTop: 10 },
-                        ]}>
+                        ]}
+                      >
                         <Text style={mainScreenStyles.personalInformationText}>
                           Verification
                         </Text>
@@ -249,7 +263,8 @@ const Main: React.FunctionComponent<{}> = () => {
                           <Text
                             style={
                               mainScreenStyles.personalInformationBottomText
-                            }>
+                            }
+                          >
                             Continue
                           </Text>
                         </TouchableOpacity>
@@ -260,7 +275,8 @@ const Main: React.FunctionComponent<{}> = () => {
                         style={[
                           mainScreenStyles.personalInformation,
                           { paddingTop: 10 },
-                        ]}>
+                        ]}
+                      >
                         <Text style={mainScreenStyles.personalInformationText}>
                           Confirm Email
                         </Text>
@@ -268,7 +284,8 @@ const Main: React.FunctionComponent<{}> = () => {
                           <Text
                             style={
                               mainScreenStyles.personalInformationBottomText
-                            }>
+                            }
+                          >
                             Continue
                           </Text>
                         </TouchableOpacity>
@@ -287,8 +304,9 @@ const Main: React.FunctionComponent<{}> = () => {
             <View style={mainScreenStyles.subNewsAndPromo}>
               <ImageBackground
                 source={appIcons.mainScreen.icon7}
-                resizeMode='cover'
-                style={{ flex: 0.8 }}>
+                resizeMode="cover"
+                style={{ flex: 0.8 }}
+              >
                 <Text
                   style={{
                     textAlign: "right",
@@ -297,7 +315,8 @@ const Main: React.FunctionComponent<{}> = () => {
                     fontWeight: "700",
                     fontSize: 22,
                     color: "#FFFFFF",
-                  }}>
+                  }}
+                >
                   Get $12 free!
                 </Text>
               </ImageBackground>
@@ -308,13 +327,16 @@ const Main: React.FunctionComponent<{}> = () => {
                   gap: 20,
                   paddingTop: 20,
                   paddingLeft: 10,
-                }}>
+                }}
+              >
                 <Text
-                  style={{ fontWeight: "700", fontSize: 16, color: "#1C1939" }}>
+                  style={{ fontWeight: "700", fontSize: 16, color: "#1C1939" }}
+                >
                   Invite your friends!
                 </Text>
                 <Text
-                  style={{ fontWeight: "400", fontSize: 13, color: "#1C1939" }}>
+                  style={{ fontWeight: "400", fontSize: 13, color: "#1C1939" }}
+                >
                   For every user you invite and signs up, you can{"\n"}earn up
                   $5{" "}
                 </Text>
@@ -324,7 +346,8 @@ const Main: React.FunctionComponent<{}> = () => {
                       fontWeight: "700",
                       fontSize: 15,
                       color: "#7165E3",
-                    }}>
+                    }}
+                  >
                     Invite Now
                   </Text>
                 </TouchableOpacity>

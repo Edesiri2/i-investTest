@@ -22,4 +22,9 @@ export const appIcons = {
     icon2: require("./Icons/Rectangle2.png"),
     icon3: require("./Icons/Rectangle3.png"),
   },
+  receiptScreen: {
+    icon1: require("./Icons/Shape.png"),
+    icon2: require("./Icons/burger1.png"),
+    icon3: require("./Icons/Rectangle3.png"),
+  },
 };
