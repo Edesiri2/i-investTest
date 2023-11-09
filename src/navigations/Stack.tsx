@@ -3,6 +3,7 @@ import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import Main from "../screens/Main";
 import Details from "../screens/Details";
 import SavingScore from "../screens/SavingScore";
+import Transfer from "../screens/Transfer";
 
 const Stacks = createNativeStackNavigator();
 
@@ -11,24 +12,32 @@ const Stack: React.FunctionComponent<{}> = () => {
     <Stacks.Navigator
       screenOptions={{
         headerShown: false,
-      }}>
+      }}
+    >
       <Stacks.Screen
-        name='Main'
+        name="Main"
         component={Main}
         options={{
           animation: "simple_push",
         }}
       />
       <Stacks.Screen
-        name='Details'
+        name="Details"
         component={Details}
         options={{
           animation: "slide_from_right",
         }}
       />
       <Stacks.Screen
-        name='SavingScore'
+        name="SavingScore"
         component={SavingScore}
+        options={{
+          animation: "slide_from_left",
+        }}
+      />
+      <Stacks.Screen
+        name="Transfer"
+        component={Transfer}
         options={{
           animation: "slide_from_left",
         }}

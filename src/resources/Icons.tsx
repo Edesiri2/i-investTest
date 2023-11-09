@@ -17,4 +17,9 @@ export const appIcons = {
     icon6: require("./Icons/Medical.png"),
     icon7: require("./Icons/Ilustration.png"),
   },
+  transferScreen: {
+    icon1: require("./Icons/Rectangle1.png"),
+    icon2: require("./Icons/Rectangle2.png"),
+    icon3: require("./Icons/Rectangle3.png"),
+  },
 };

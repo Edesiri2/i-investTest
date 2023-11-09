@@ -532,3 +532,151 @@ export const savingScoreScreenStyles = StyleSheet.create({
     fontSize: 15,
   },
 });
+
+export const transferScreenStyles = StyleSheet.create({
+  container: {
+    display: "flex",
+    flex: 1,
+  },
+  topView: {
+    flex: 0.65,
+    backgroundColor: "#7165E3",
+    paddingTop: Platform.OS === "android" ? 60 : 70,
+    borderBottomLeftRadius: 40,
+    borderBottomRightRadius: 40,
+    overflow: "hidden",
+  },
+  transferView: {
+    flexDirection: "column",
+    alignItems: "center",
+    gap: 30,
+  },
+  transferText: {
+    fontWeight: "700",
+    fontSize: 20,
+    color: "#FFFFFF",
+  },
+  transferIconView: {
+    display: "flex",
+    flexDirection: "row",
+    gap: 20,
+  },
+  transferIconBtn: {
+    width: 62,
+    height: 62,
+    justifyContent: "center",
+    alignItems: "center",
+    borderRadius: 20,
+  },
+  transferIconBtnView: {
+    display: "flex",
+    flexDirection: "column",
+    alignItems: "center",
+    gap: 5,
+  },
+  transferIconBtnText: {
+    color: "#FFFFFF",
+    fontWeight: "700",
+    fontSize: 12,
+  },
+  recentText: {
+    fontWeight: "700",
+    fontSize: 18,
+    marginLeft: 12,
+    paddingTop: 15,
+    paddingBottom: 15,
+  },
+  recentFlatListBtn: {
+    width: 142,
+    height: 185,
+    backgroundColor: "#FFFFFF",
+    borderRadius: 20,
+    marginLeft: 10,
+    overflow: "hidden",
+  },
+  recentFlatListView: {
+    flexDirection: "column",
+    alignItems: "center",
+    gap: 1,
+    paddingTop: 12,
+  },
+  recentFlatListImg: {
+    borderRadius: 20,
+    height: 110,
+    width: 110,
+  },
+  recentFlatListSubView: {
+    flexDirection: "column",
+    alignItems: "center",
+  },
+  recentFlatListSubViewNameText: {
+    fontWeight: "700",
+    fontSize: 13,
+    color: "#1c1939",
+  },
+  recentFlatListSubViewDescText: {
+    fontWeight: "700",
+    fontSize: 12,
+    color: "#9EA6BE",
+  },
+  bottomView: {
+    display: "flex",
+    flex: 1,
+    backgroundColor: "#FFFFFF",
+    marginTop: 40,
+  },
+  allContactsText: {
+    fontWeight: "700",
+    fontSize: 18,
+    marginLeft: 12,
+    paddingTop: 30,
+    paddingBottom: 15,
+  },
+  searchTextInput: {
+    width: "93%",
+    backgroundColor: "#F9F9FB",
+    height: 49,
+    alignSelf: "center",
+    borderRadius: 10,
+    fontWeight: "700",
+    paddingLeft: 10,
+  },
+  divider: {
+    borderBottomWidth: 0.5,
+    borderColor: "gainsboro",
+  },
+  contactListView: {
+    width: "93%",
+    alignSelf: "center",
+  },
+  subContactListView: {
+    flexDirection: "row",
+    justifyContent: "space-between",
+  },
+  contactListImg: {
+    borderRadius: 20,
+    height: 110,
+    width: 110,
+  },
+  contactListInfoView: {
+    flexDirection: "column",
+    gap: 5,
+    paddingTop: 20,
+  },
+  contactListInviteView: {
+    paddingTop: 20,
+  },
+  contactListInviteBtn: {
+    justifyContent: "center",
+    alignItems: "center",
+    backgroundColor: "#9EA6EE",
+    width: 73,
+    height: 35,
+    borderRadius: 10,
+  },
+  contactListInviteBtnText: {
+    fontWeight: "400",
+    fontSize: 12,
+    color: "#FFFFFF",
+  },
+});
