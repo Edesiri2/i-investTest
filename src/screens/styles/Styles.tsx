@@ -555,6 +555,7 @@ export const transferScreenStyles = StyleSheet.create({
     fontWeight: "700",
     fontSize: 20,
     color: "#FFFFFF",
+   alignItems: "center",
   },
   transferIconView: {
     display: "flex",

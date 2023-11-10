@@ -4,6 +4,7 @@ import { detailsScreenStyles } from "./styles/Styles";
 import LeftIcon from "react-native-vector-icons/Entypo";
 import { appIcons } from "../resources/Icons";
 import { useNavigation, StackActions } from "@react-navigation/native";
+import BackButton from "../components/BackButton";
 
 const transactionList = [
   {
@@ -48,7 +49,7 @@ const Details: React.FunctionComponent<{}> = () => {
   const navigation: any = useNavigation();
   return (
     <View style={detailsScreenStyles.container}>
-      <View style={detailsScreenStyles.topDetailScreen}>
+      <View style={detailsScreenStyles.topDetailScreen}><View><BackButton/></View>
         <View style={detailsScreenStyles.budgetView}>
           <TouchableOpacity
             onPress={() => {
@@ -128,7 +129,7 @@ const Details: React.FunctionComponent<{}> = () => {
                 }}>
                 Earned
               </Text>
-              <View style={{ flexDirection: "row" }}>
+              <View style={{ flexDirection:"row"}}>
                 <View
                   style={{
                     width: 10,

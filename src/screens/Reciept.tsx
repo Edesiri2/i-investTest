@@ -3,11 +3,12 @@ import { View, Text, Platform, TouchableOpacity } from "react-native";
 import { receiptScreenStyles } from "./styles/Styles";
 import { Image } from "react-native";
 import { appIcons } from "../resources/Icons";
+import BackButton from "../components/BackButton";
 
 const Reciept: React.FunctionComponent<{}> = () => {
   return (
     <View style={receiptScreenStyles.container}>
-      <View>
+      <View><BackButton/>
         <View
           style={{
             flexDirection: "column",

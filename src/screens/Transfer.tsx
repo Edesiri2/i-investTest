@@ -14,6 +14,7 @@ import Bank from "react-native-vector-icons/FontAwesome";
 import Wifi from "react-native-vector-icons/FontAwesome";
 import Qrcode from "react-native-vector-icons/MaterialIcons";
 import { appIcons } from "../resources/Icons";
+import BackButton from "../components/BackButton";
 
 const contactList = [
   {
@@ -44,7 +45,7 @@ const Transfer: React.FunctionComponent<{}> = () => {
   return (
     <View style={transferScreenStyles.container}>
       {/* top screen */}
-      <View style={transferScreenStyles.topView}>
+      <View style={transferScreenStyles.topView}><View ><BackButton/></View>
         <View style={transferScreenStyles.transferView}>
           <Text style={transferScreenStyles.transferText}>Transfer</Text>
           <View style={transferScreenStyles.transferIconView}>
